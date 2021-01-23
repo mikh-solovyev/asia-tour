@@ -30,7 +30,7 @@
             </nav>
             <address class="contacts">
                 <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a>
-                <div class="worktime">
+                <div class="worktime contacts__worktime">
                     <div class="worktime__title">График работы</div>
                     <div class="worktime__description">
                         <div class="worktime__description-field">пн-вс: 09:00 - 20:00</div>
@@ -42,34 +42,25 @@
         <main class="page">
             <section class="banner">
                 <h1 class="banner__heading">Авторские туры по Азии</h1>
-                <div class="banner__sub-heading">Открой для себя Азию</div>
+                <p class="banner__sub-heading">Открой для себя Азию</p>
                 <a href="#" class="banner__button">Подробнее</a>
             </section>
-            <section class="tour">
-                <div class="tour__heading">
-                    <h2 class="tour__heading-title">Горящие туры</h2>
-                    <img src="" alt="Горящие туры" class="tour_heading-icon">
-                </div>
-                <ul class="tour__list">
-                    <li class="tour__item">
-                        <img src="" alt="Тайланд" class="tour__image">
+            <section class="tours">
+                <h2 class="tours__heading section-title">Горящие туры</h2>
+                <ul class="tours__list">
+                    <li class="tours__item tour">
+                        <div class="tour__picture">
+                            <img src="" alt="Тайланд" class="tour__image">
+                        </div>
                         <div class="tour__title">Тайланд</div>
-                        <div class="included">
-                            <ul class="included__list">
-                                <li class="included__item">
-                                    <img src="" alt="Дней" class="included__image">
-                                    <div class="included__title">7 - 12 ночей</div>
-                                </li>
-                                <li class="included__item">
-                                    <img src="" alt="Завтраки" class="included__image">
-                                    <div class="included__title">Завтраки</div>
-                                </li>
-                            </ul>
+                        <div class="tour__included included">
+                            <div class="included__title included__title_night">7 - 12 ночей</div>
+                            <div class="included__title included__title_breakfast">Завтраки</div>
                         </div>
                         <p class="tour__description">
                             Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.
                         </p>
-                        <a href="#" class="tour__button">Смотреть</a>
+                        <a href="#" class="tour__button common-btn">Смотреть</a>
                     </li>
                     <li class="tour__item">
                         <img src="" alt="Тайланд" class="tour__image">
@@ -114,25 +105,29 @@
                 </ul>
             </section>
             <section class="news">
-                <h2 class="news__heading">Новости и акции</h2>
+                <h2 class="news__heading section-title">Новости и акции</h2>
                 <ul class="news__list">
                     <li class="news__item">
                         <img src="" alt="Дешевые путевки на Новый год!" class="news__image">
-                        <div class="news__date">Декабрь 2019</div>
-                        <div class="news__title">Дешевые путевки на Новый год!</div>
-                        <p class="news__sub-title">Проведи новый год в Тайланде</p>
+                        <div class="news__content">
+                            <date class="news__date">Декабрь 2019</date>
+                            <h3 class="news__title">Дешевые путевки на Новый год!</h3>
+                            <p class="news__sub-title">Проведи новый год в Тайланде</p>
+                        </div>
                     </li>
                     <li class="news__item">
                         <img src="" alt="Акция для серфенгистов!" class="news__image">
-                        <div class="news__date">Декабрь 2019</div>
-                        <div class="news__title">Акция для серфенгистов!</div>
-                        <p class="news__sub-title">В сезон больших волн скидка на путевку в Тайланд на остров серфенгистов. Удачного пути!</p>
+                        <div class="news__content">
+                            <date class="news__date">Декабрь 2019</date>
+                            <div class="news__title">Акция для серфенгистов!</div>
+                            <p class="news__sub-title">В сезон больших волн скидка на путевку в Тайланд на остров серфенгистов. Удачного пути!</p>
+                        </div>
                     </li>
                 </ul>
                 <div class="pagination">
                     <div class="pagination__display">Страница 1 из 7</div>
                     <ul class="pagination__list">
-                        <li class="pagination__item">
+                        <li class="pagination__item pagination__item_active">
                             <a href="#" class="pagination__link">1</a>
                         </li>
                         <li class="pagination__item">
