@@ -12,8 +12,8 @@
 </head>
 <body>
     <div class="wrapper main-page">
-        <div class="container">
-            <header class="header main-page__header">
+        <header class="header main-page__header">
+            <div class="container header__container">
                 <div class="logo header__logo">
                     <a href="/" class="logo__link">
                         <img src="./images/logo.png" alt="Логотип" class="logo__image">
@@ -21,7 +21,7 @@
                 </div>
                 <nav class="menu header__menu">
                     <ul class="menu__list">
-                        <li class="menu__item">
+                        <li class="menu__item menu__item_active">
                             <a href="#" class="menu__link">Главная</a>
                         </li>
                         <li class="menu__item">
@@ -34,70 +34,72 @@
                 </nav>
                 <address class="contacts">
                     <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a>
-                    <div class="worktime contacts__worktime">
-                        <div class="worktime__title">График работы</div>
-                        <div class="worktime__description">
-                            <div class="worktime__description-field">пн-вс: 09:00 - 20:00</div>
-                            <div class="worktime__description-field worktime__description-field_font_normal">Обед: 14:00 - 14:30</div>
+                    <div class="work-time contacts__work-time">
+                        <div class="work-time__title">График работы</div>
+                        <div class="work-time__description">
+                            <div class="work-time__description-field">пн-вс: 09:00 - 20:00</div>
+                            <div class="work-time__description-field work-time__description-field_font_normal">Обед: 14:00-14:30</div>
                         </div>
                     </div>
                 </address>
-            </header>
-            <main class="page">
-                <section class="banner page__banner">
-                    <h1 class="banner__heading">Авторские туры по Азии</h1>
-                    <p class="banner__sub-heading">Открой для себя Азию</p>
-                    <a href="#" class="banner__button btn btn_primary">Подробнее</a>
+            </div>
+        </header>
+        <main class="page">
+            <div class="container">
+                <section class="hero page__hero">
+                    <h1 class="hero__heading">Авторские туры по Азии</h1>
+                    <p class="hero__sub-heading">Открой для себя Азию</p>
+                    <a href="#" class="btn btn_primary hero__button">Подробнее</a>
                 </section>
                 <section class="tours page__tour">
                     <h2 class="tours__heading section-title">Горящие туры</h2>
                     <ul class="tours__list">
-                        <li class="tours__item tour">
+                        <li class="tour tours__item">
                             <div class="tour__picture">
                                 <img src="./images/tour_1.png" alt="Тайланд" class="tour__image">
                             </div>
                             <div class="tour__content">
                                 <div class="tour__title">Тайланд</div>
-                                <div class="tour__included included">
+                                <div class="included tour__included">
                                     <div class="included__item included__item_icon_night" >7 - 12 ночей</div>
                                     <div class="included__item included__item_icon_breakfast">Завтраки</div>
                                 </div>
                                 <p class="tour__description">
                                     Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.
                                 </p>
-                                <a href="#" class="tour__button btn btn_second">Смотреть</a>
+                                <a href="#" class=" btn btn_second tour__button">Смотреть</a>
                             </div>
                         </li>
-                        <li class="tours__item tour">
+                        <li class="tour tours__item">
                             <div class="tour__picture">
                                 <img src="./images/tour_2.png" alt="Тайланд" class="tour__image">
                             </div>
                             <div class="tour__content">
-                                <div class="tour__title">Тайланд</div>
-                                <div class="tour__included included">
+                                <div class="tour__title">Бали</div>
+                                <div class="included tour__included">
                                     <div class="included__item included__item_icon_night">7 - 12 ночей</div>
                                     <div class="included__item included__item_icon_breakfast">Завтраки</div>
                                 </div>
                                 <p class="tour__description">
                                     Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.
                                 </p>
-                                <a href="#" class="tour__button btn btn_second">Смотреть</a>
+                                <a href="#" class="btn btn_second tour__button">Смотреть</a>
                             </div>
                         </li>
-                        <li class="tours__item tour">
+                        <li class="tour tours__item">
                             <div class="tour__picture">
                                 <img src="./images/tour_3.png" alt="Тайланд" class="tour__image">
                             </div>
                             <div class="tour__content">
-                                <div class="tour__title">Тайланд</div>
-                                <div class="tour__included included">
+                                <div class="tour__title">Индонезия</div>
+                                <div class="included tour__included">
                                     <div class="included__item included__item_icon_night">7 - 12 ночей</div>
                                     <div class="included__item included__item_icon_breakfast">Завтраки</div>
                                 </div>
                                 <p class="tour__description">
                                     Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.
                                 </p>
-                                <a href="#" class="tour__button btn btn_second">Смотреть</a>
+                                <a href="#" class="btn btn_second tour__button">Смотреть</a>
                             </div>
                         </li>
                     </ul>
@@ -167,12 +169,14 @@
                                 текста рыбы на русском языке, а начинающему оратору
                                 отточить навык в публичных выступлениях в домашних условиях.
                             </p>
-                            <a href="#" class="about__link btn btn_primary">Подробнее</a>
+                            <a href="#" class="btn btn_primary about__link">Подробнее</a>
                         </div>
                     </div>
                 </section>
-            </main>
-            <footer class="footer main-page__footer">
+            </div>
+        </main>
+        <footer class="footer main-page__footer">
+            <div class="container footer__container">
                 <div class="logo footer__logo">
                     <a href="/" class="logo__link">
                         <img src="./images/logo.png" alt="Логотип" class="logo__image">
@@ -180,7 +184,7 @@
                 </div>
                 <nav class="menu footer__menu">
                     <ul class="menu__list">
-                        <li class="menu__item">
+                        <li class="menu__item menu__item_active">
                             <a href="#" class="menu__link">Главная</a>
                         </li>
                         <li class="menu__item">
@@ -219,9 +223,10 @@
                     <div class="contacts__text">Бесплатный звонок по России</div>
                     <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a>
                 </address>
-            </footer>
-        </div>
+            </div>
+        </footer>
+
     </div>
-    
+    <script> </script>
 </body>
 </html>

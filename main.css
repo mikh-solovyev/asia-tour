@@ -1,11 +1,29 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 400;
     font-size: 16px;
+    color: #fff;
     line-height: 1.42;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
 }
 
 .container {
@@ -16,26 +34,24 @@ body {
 .section-title {
     font-size: 36px;
     font-weight: 700;
-    color: #fff;
 }
 
 .btn {
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
-    padding: 18px 40px;
+    padding: 18px 39px;
     border-radius: 35px;
     text-transform: uppercase;
     text-decoration: none;
     border: 1px solid transparent;
     background-color: #fff;
-    color: #000;
+    color: #fff;
     transition: 0.3s;
 }
 
 .btn_primary {
     background-color: #F5170E;
-    color: #fff;
     border-color: #F5170E;
 }
 
@@ -60,19 +76,19 @@ body {
             url("./images/main-bottom-bg.png");
     background-position:
             top center,
-            bottom center;
+            bottom  164px center;
     background-repeat: no-repeat;
 }
 
 .main-page__header {
-   margin-bottom: 100px;
+   margin-bottom: 94px;
 }
 
-.header {
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 26px 0;
+    padding: 23px 0;
 }
 
 .header__logo {
@@ -88,9 +104,6 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 .menu__item {
@@ -103,10 +116,12 @@ body {
 
 .menu__link {
     font-size: 14px;
-    font-weight: 400;
-    color: #fff;
     text-decoration: none;
     transition: 0.3s;
+}
+
+.menu__item_active .menu__link {
+    color: #DA0100;
 }
 
 .menu__link:hover {
@@ -119,21 +134,19 @@ body {
 
 .contacts__phone {
     font-size: 26px;
-    font-weight: 400;
-    color: #fff;
     text-decoration: none;
 }
 
-.contacts__worktime {
+.contacts__work-time {
     text-align: right;
     cursor: pointer;
 }
 
-.worktime {
+.work-time {
     position: relative;
 }
 
-.worktime::before {
+.work-time::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -142,63 +155,68 @@ body {
     left: 0;
 }
 
-.worktime__title {
+.work-time__title {
     font-size: 13px;
-    color: #fff;
     text-decoration: underline;
+    color: #98A4A8;
+    transition: 0.3s;
 }
 
-.worktime__description {
+.work-time__description {
     display: none;
     position: absolute;
-    top: calc(100% + 10px);
+    top: calc(100% + 5px);
     right: 0;
     text-align: left;
-    background-color: #ededed;
+    background-color: #CDD1D2;
+    color: #000;
     border-radius: 4px;
-    padding: 10px 19px;
+    padding: 12px 19px;
 }
 
-.worktime__description::before {
+.work-time__description::before {
     content: "";
     position: absolute;
     bottom: 100%;
-    right: 40px;
+    right: 44px;
     border: 10px solid transparent;
-    border-bottom-color: #ededed;
+    border-bottom-color: #CDD1D2;
 }
 
-.worktime:hover > .worktime__description {
+.work-time:hover > .work-time__description {
     display: block;
 }
 
-.worktime__description-field {
-    font-size: 13px;
-    font-weight: 700;
+.work-time:hover > .work-time__title {
+    color: inherit;
 }
 
-.worktime__description-field_font_normal {
+.work-time__description-field {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.work-time__description-field_font_normal {
     font-weight: 600;
 }
 
-.page__banner {
+.page__hero {
     max-width: 511px;
-    margin-bottom: 246px;
+    margin-bottom: 244px;
 }
 
-.banner__heading {
+.hero__heading {
     font-size: 72px;
     font-weight: 700;
-    color: #fff;
     margin-top: 0;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
+    line-height: 1.4;
 }
 
-.banner__sub-heading {
+.hero__sub-heading {
     font-size: 18px;
-    font-weight: 400;
-    color: #fff;
-    margin-bottom: 34px;
+    margin-bottom: 29px;
 }
 
 .page__tour {
@@ -212,26 +230,52 @@ body {
 
 .tours__heading::after {
     content: url("./images/flame.png");
-    padding-left: 10px;
+    padding-left: 14px;
 }
 
+/* Flexbox для блока
 .tours__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+}
+
+.tour {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
 }
 
 .tours__item {
     width: calc(100% / 3 - 14px);
 }
+*/
+
+/* inline-block для блока */
+
+.tours__list {
+    font-size: 0;
+}
+
+.tours__item {
+    width: calc(100% / 3 - 18px);
+}
 
 .tour {
     background-color: #fff;
+    color: #000;
     border-radius: 5px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    margin-right: 27px;
 }
+
+.tour:last-child {
+    margin-right: 0;
+}
+
+/* end inline-block для блока */
 
 .tour__picture {
     max-height: 144px;
@@ -246,13 +290,14 @@ body {
 }
 
 .tour__content {
-    padding: 0 22px 22px 22px;
+    padding: 0 20px 25px 20px;
 }
 
 .tour__title {
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 21px;
+    color: #000;
+    margin-bottom: 13px;
 }
 
 .tour__included {
@@ -268,7 +313,6 @@ body {
 
 .included__item {
     font-size: 16px;
-    font-weight: 400;
     color: #666;
     width: 50%;
 }
@@ -276,27 +320,32 @@ body {
 .included__item_icon_night::before {
     content: url("./images/calendar.png");
     position: relative;
-    top: 5px;
-    margin-right: 10px;
+    top: 6px;
+    left: 6px;
+    margin-right: 14px;
 }
 
 .included__item_icon_breakfast::before {
     content: url("./images/meal.png");
     position: relative;
-    top: 5px;
-    margin-right: 10px;
+    top: 6px;
+    margin-right: 9px;
 }
 
 .tour__description {
     font-size: 14px;
-    font-weight: 400;
     color: #303030;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.tour__button {
+    padding: 18px 30px;
 }
 
 .page__news {
-    margin-bottom: 221px;
+    margin-bottom: 246px;
 }
 
 .news__heading {
@@ -309,9 +358,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0;
-    margin: 0 0 53px;
-    list-style-type: none;
+    margin: 0 0 50px;
 }
 
 .news__item {
@@ -328,16 +375,14 @@ body {
 
 .news__content {
     position: absolute;
-    top: 260px;
-    left: 30px;
+    top: 250px;
+    left: 28px;
     right: 30px;
-    color: #fff;
 }
 
 .news__date {
     display: inline-block;
     font-size: 14px;
-    font-weight: 400;
     margin-bottom: 13px;
 }
 
@@ -350,7 +395,6 @@ body {
 
 .news__sub-title {
     font-size: 16px;
-    font-weight: 400;
     margin: 0;
 }
 
@@ -358,12 +402,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
 }
 
 .pagination__display {
     font-size: 16px;
-    font-weight: 400;
     margin-right: 25px;
 }
 
@@ -371,13 +413,10 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
 }
 
 .pagination__item {
-    margin-right: 13px;
+    margin-right: 1px;
     width: 32px;
     height: 32px;
 }
@@ -409,12 +448,13 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    color: #000;
 }
 
 .about__left-block {
     position: absolute;
     left: 0;
-    bottom: 47px;
+    bottom: 44px;
     overflow: hidden;
     border-radius: 5px;
 }
@@ -447,23 +487,22 @@ body {
 
 .about__description {
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.7;
     margin-top: 0;
-    margin-bottom: 43px;
+    margin-bottom: 41px;
 }
 
 .about__link {
     display: inline-block;
 }
 
-.main-page__footer {
+.footer__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #30434B;
-    padding: 45px 0 45px 0;
+    padding: 40px 0 50px 0;
 }
 
 .footer__logo {
@@ -480,9 +519,6 @@ body {
 
 .social__list {
     display: flex;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
 }
 
 .social__item {
@@ -505,7 +541,6 @@ body {
 
 .contacts__text {
     font-size: 11px;
-    font-weight: 400;
     color: #9a9a9a;
     margin-bottom: 6px;
 }
