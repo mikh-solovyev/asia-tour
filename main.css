@@ -375,9 +375,10 @@ ul li {
 
 .news__content {
     position: absolute;
-    top: 250px;
     left: 28px;
-    right: 30px;
+    right: 28px;
+    bottom: 30px;
+    min-height: 116px;
 }
 
 .news__date {
