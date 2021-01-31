@@ -17,6 +17,10 @@ a {
     color: inherit;
 }
 
+p {
+    margin: 0;
+}
+
 ul {
     padding: 0;
     margin: 0;
@@ -27,7 +31,7 @@ ul li {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -50,17 +54,22 @@ ul li {
     transition: 0.3s;
 }
 
-.btn_primary {
+.btn_type_primary {
     background-color: #F5170E;
     border-color: #F5170E;
 }
 
-.btn_second {
+.btn_type_primary:hover {
+    opacity: 0.9;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn_type_second {
     color: #F5170E;
     border-color: #F5170E;
 }
 
-.btn_second:hover {
+.btn_type_second:hover {
     background-color: #F5170E;
     color: #fff;
 }
@@ -72,8 +81,8 @@ ul li {
 .main-page {
     background-color: #001821;
     background-image:
-            url("./images/main-top-bg.png"),
-            url("./images/main-bottom-bg.png");
+            url("../images/bg/main-top-bg.png"),
+            url("../images/bg/main-bottom-bg.png");
     background-position:
             top center,
             bottom  164px center;
@@ -229,11 +238,11 @@ ul li {
 }
 
 .tours__heading::after {
-    content: url("./images/flame.png");
+    content: url("../images/icons/flame.png");
     padding-left: 14px;
 }
 
-/* Flexbox для блока
+
 .tours__list {
     display: flex;
     flex-wrap: wrap;
@@ -244,38 +253,13 @@ ul li {
     background-color: #fff;
     color: #000;
     border-radius: 5px;
-}
-
-.tours__item {
-    width: calc(100% / 3 - 14px);
-}
-*/
-
-/* inline-block для блока */
-
-.tours__list {
-    font-size: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .tours__item {
     width: calc(100% / 3 - 18px);
 }
-
-.tour {
-    background-color: #fff;
-    color: #000;
-    border-radius: 5px;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 16px;
-    margin-right: 27px;
-}
-
-.tour:last-child {
-    margin-right: 0;
-}
-
-/* end inline-block для блока */
 
 .tour__picture {
     max-height: 144px;
@@ -290,6 +274,9 @@ ul li {
 }
 
 .tour__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     padding: 25px 20px 25px 20px;
 }
 
@@ -318,7 +305,7 @@ ul li {
 }
 
 .included__item_icon_night::before {
-    content: url("./images/calendar.png");
+    content: url("../images/icons/calendar.png");
     position: relative;
     top: 6px;
     left: 6px;
@@ -326,7 +313,7 @@ ul li {
 }
 
 .included__item_icon_breakfast::before {
-    content: url("./images/meal.png");
+    content: url("../images/icons/meal.png");
     position: relative;
     top: 6px;
     margin-right: 9px;
@@ -335,17 +322,18 @@ ul li {
 .tour__description {
     font-size: 14px;
     color: #303030;
-    margin-top: 0;
     margin-bottom: 24px;
     line-height: 1.5;
+    flex-grow: 1;
 }
 
 .tour__button {
     padding: 18px 30px;
+    align-self: flex-start;
 }
 
 .page__news {
-    margin-bottom: 246px;
+    margin-bottom: 146px;
 }
 
 .news__heading {
@@ -396,7 +384,6 @@ ul li {
 
 .news__sub-title {
     font-size: 16px;
-    margin: 0;
 }
 
 .pagination {
@@ -420,12 +407,17 @@ ul li {
     margin-right: 1px;
     width: 32px;
     height: 32px;
+    transition: 0.3s;
 }
 
 .pagination__item_active {
     background-color: #fff;
     color: #F5170E;
     border-radius: 50%;
+}
+
+.pagination__item:hover {
+    color: #F5170E;
 }
 
 .pagination__item:last-child {
@@ -450,6 +442,7 @@ ul li {
     justify-content: flex-end;
     align-items: flex-end;
     color: #000;
+    padding-top: 100px;
 }
 
 .about__left-block {
@@ -489,7 +482,6 @@ ul li {
 .about__description {
     font-size: 16px;
     line-height: 1.7;
-    margin-top: 0;
     margin-bottom: 41px;
 }
 
