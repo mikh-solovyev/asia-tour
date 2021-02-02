@@ -1,0 +1,18 @@
+.tours__heading {
+    margin-bottom: 51px;
+}
+
+.tours__heading::after {
+    content: url("../../images/icons/flame.png");
+    padding-left: 14px;
+}
+
+.tours__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tours__item {
+    width: calc(100% / 3 - 18px);
+}

@@ -1,0 +1,33 @@
+.partners {
+    background-color: #F4F5F5;
+    padding: 88px 0 47px 0;
+}
+
+.partners__heading {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.partners__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partners__item {
+    margin-bottom: 66px;
+    margin-right: 70px;
+    filter: grayscale(1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.partners__item:hover {
+    filter: grayscale(0);
+}
+
+.partners__item:nth-child(4n) {
+    margin-right: 0;
+}

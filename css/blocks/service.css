@@ -1,0 +1,35 @@
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+
+.service:last-child {
+    margin-bottom: 0;
+}
+
+.service__picture {
+    width: 460px;
+    overflow: hidden;
+}
+
+.service__image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.service__content {
+    width: calc(100% - 460px - 57px);
+    padding: 12px 0;
+}
+
+.service__heading {
+    margin-bottom: 28px;
+}
+
+.service__description {
+    margin-bottom: 34px;
+    line-height: 1.7;
+}

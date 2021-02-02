@@ -1,0 +1,25 @@
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #30434B;
+    padding: 40px 0 50px 0;
+}
+
+.footer__logo {
+    margin-right: 79px;
+}
+
+.footer__menu {
+    flex-grow: 1;
+}
+
+.footer__social {
+    margin-right: 74px;
+}
+
+.footer__contacts {
+    text-align: right;
+}
+

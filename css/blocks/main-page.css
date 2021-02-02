@@ -1,0 +1,31 @@
+.main-page {
+    background-color: #001821;
+    background-image:
+            url("../../images/bg/main-top-bg.png"),
+            url("../../images/bg/main-bottom-bg.png");
+    background-position:
+            top center,
+            bottom  164px center;
+    background-repeat: no-repeat;
+}
+
+.main-page__header {
+    margin-bottom: 94px;
+}
+
+.main-page__hero {
+    max-width: 511px;
+    margin-bottom: 244px;
+}
+
+.main-page__tour {
+    margin-bottom: 127px;
+}
+
+.main-page__news {
+    margin-bottom: 146px;
+}
+
+.main-page__about {
+    margin-bottom: 53px;
+}

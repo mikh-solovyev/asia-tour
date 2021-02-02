@@ -1,0 +1,11 @@
+.hero__heading {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.hero__sub-heading {
+    font-size: 18px;
+    margin-bottom: 29px;
+}

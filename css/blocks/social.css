@@ -1,0 +1,17 @@
+.social__list {
+    display: flex;
+}
+
+.social__item {
+    margin-right: 10px;
+    opacity: 0.4;
+    transition: 0.3s;
+}
+
+.social__item:last-child {
+    margin-right: 0;
+}
+
+.social__item:hover {
+    opacity: 1;
+}

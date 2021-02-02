@@ -1,0 +1,27 @@
+.included {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.included__item {
+    font-size: 16px;
+    color: #666;
+    width: 50%;
+}
+
+.included__item_icon_night::before {
+    content: url("../../images/icons/calendar.png");
+    position: relative;
+    top: 6px;
+    left: 6px;
+    margin-right: 14px;
+}
+
+.included__item_icon_breakfast::before {
+    content: url("../../images/icons/meal.png");
+    position: relative;
+    top: 6px;
+    margin-right: 9px;
+}
