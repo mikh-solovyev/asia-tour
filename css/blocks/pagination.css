@@ -14,7 +14,8 @@
 }
 
 .pagination_dark_theme .pagination__display {
-    margin-right: 60px;
+    margin-right: 25px;
+    margin-left: 34px;
 }
 
 .pagination__list {
