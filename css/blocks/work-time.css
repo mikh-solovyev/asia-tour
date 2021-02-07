@@ -28,6 +28,7 @@
     color: #000;
     border-radius: 4px;
     padding: 12px 19px;
+    white-space: nowrap;
 }
 
 .work-time__description::before {

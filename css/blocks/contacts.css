@@ -1,15 +1,18 @@
 .contacts {
     font-style: normal;
+    text-align: right;
 }
 
 .contacts__phone {
     font-size: 26px;
     text-decoration: none;
+    display: block;
 }
 
 .contacts__work-time {
     text-align: right;
     cursor: pointer;
+    display: inline-block;
 }
 
 .contacts__text {
