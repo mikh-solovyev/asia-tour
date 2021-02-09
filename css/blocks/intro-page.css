@@ -1,6 +1,6 @@
 .intro-page {
     position: relative;
-    background: url("../../images/bg/intro-page-bg.png") no-repeat center center;
+    background: #001821 url("../../images/bg/intro-page-bg.png") no-repeat center center;
 }
 
 .intro-page__anim {
