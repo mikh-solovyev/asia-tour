@@ -7,7 +7,7 @@
     margin-bottom: 70px;
 }
 
-.reviews__row {
+.reviews__col {
     display: flex;
     flex-direction: column;
     width: calc(50% - 13px);
