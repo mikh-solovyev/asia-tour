@@ -4,6 +4,7 @@
 @import "./blocks/section-title.css";
 @import "./blocks/btn.css";
 
+@import "./blocks/intro-page.css";
 @import "./blocks/main-page.css";
 @import "./blocks/second-page.css";
 @import "./blocks/header.css";
@@ -19,6 +20,10 @@
 @import "./blocks/tour.css";
 @import "./blocks/included.css";
 @import "./blocks/news.css";
+@import "./blocks/reviews.css";
+@import "./blocks/review.css";
+@import "./blocks/banner.css";
+@import "./blocks/form.css";
 @import "./blocks/pagination.css";
 @import "./blocks/about.css";
 @import "./blocks/footer.css";

@@ -1,0 +1,23 @@
+.banner {
+    background: url("../../images/bg/reviews-bg.png") no-repeat center;
+    overflow: hidden;
+}
+
+.banner__container {
+    position: relative;
+    min-height: 363px;
+    display: flex;
+    align-items: center;
+}
+
+.banner__container::before {
+    content: url("../../images/bg/reviews-tourist.png");
+    position: absolute;
+    left: 54%;
+    bottom: -4px;
+}
+
+.banner__heading {
+    font-size: 48px;
+    color: #fff;
+}

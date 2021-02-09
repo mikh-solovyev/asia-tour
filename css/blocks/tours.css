@@ -1,11 +1,20 @@
 .tours__heading {
+    display: inline-block;
     margin-bottom: 51px;
+    position: relative;
 }
 
 .tours__heading::after {
-    content: url("../../images/icons/flame.png");
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: -50px;
     padding-left: 14px;
+    width: 21px;
+    height: 28px;
+    background: url("../../images/icons/sprites.png") -178px -106px;
 }
+
 
 .tours__list {
     display: flex;

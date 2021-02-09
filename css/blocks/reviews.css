@@ -1,0 +1,22 @@
+
+
+.reviews__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.reviews__row {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 13px);
+}
+
+.reviews__item {
+    margin-bottom: 17px;
+}
+
+.reviews__item:last-child {
+    margin-bottom: 0;
+}

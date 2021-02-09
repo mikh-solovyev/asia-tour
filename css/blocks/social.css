@@ -4,14 +4,47 @@
 
 .social__item {
     margin-right: 10px;
-    opacity: 0.4;
-    transition: 0.3s;
 }
 
 .social__item:last-child {
     margin-right: 0;
 }
 
-.social__item:hover {
-    opacity: 1;
+.social__link {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url("../../images/icons/sprites.png") no-repeat;
+}
+
+.social__link_icon_telegram {
+    background-position: -122px -66px;
+}
+
+.social__link_icon_telegram:hover {
+    background-position: -122px -10px;
+}
+
+.social__link_icon_vk {
+    background-position: -66px -122px;
+}
+
+.social__link_icon_vk:hover {
+    background-position: -10px -122px;
+}
+
+.social__link_icon_fb {
+    background-position: -66px -10px;
+}
+
+.social__link_icon_fb:hover {
+    background-position: -10px -10px;
+}
+
+.social__link_icon_inst {
+    background-position: -66px -66px;
+}
+
+.social__link_icon_inst:hover {
+    background-position: -10px -66px;
 }

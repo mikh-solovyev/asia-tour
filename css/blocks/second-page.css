@@ -6,8 +6,6 @@
     margin-bottom: 96px;
 }
 
-
-
 .second-page__header {
     margin-bottom: 66px;
 }
@@ -30,6 +28,14 @@
 
 .second-page__footer {
     background-color: #001821;
+}
+
+.second-page__reviews {
+    margin-bottom: 86px;
+}
+
+.second-page__form {
+    
 }
 
 
